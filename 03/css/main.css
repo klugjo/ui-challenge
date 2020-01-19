@@ -17,9 +17,12 @@ body {
   transition-duration: 0.3s;
   transition-property: all;
   border-radius: 0;
+  outline: none;
 }
 
-.btn-cta:hover {
+.btn-cta:hover,
+.btn-cta:visited,
+.btn-cta:active {
   color: #fff;
   background-color: #c18261;
   border-color: #c18261;
