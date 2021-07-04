@@ -1,0 +1,66 @@
+.container {
+  min-height     : 100vh;
+  padding        : 0 0 0 0.5rem;
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-start;
+  align-items    : flex-start;
+  height         : 100vh;
+}
+
+.title {
+  color    : #888;
+  font-size: 16px;
+  margin   : 8px 0 8px 16px;
+}
+
+.menu {
+  display        : flex;
+  min-height     : 100vh;
+  height         : 100vh;
+  flex-direction : column;
+  justify-content: flex-start;
+  align-items    : flex-start;
+  font-size      : 12px;
+}
+
+.menuItem {
+  display        : flex;
+  flex-direction : row;
+  justify-content: flex-start;
+  align-items    : flex-start;
+  border-radius  : 8px;
+  padding        : 8px 16px;
+  margin         : 4px 0;
+  width          : 150px;
+  cursor         : pointer;
+  color          : #888;
+}
+
+.menuItem:hover {
+  background: rgba(13, 12, 34, 0.05);
+}
+
+.menuItem.selected {
+  background: rgba(13, 12, 34, 0.15);
+  cursor    : default;
+  color     : black;
+}
+
+.menuItem aside {
+  width: 24px;
+}
+
+.menuItem main {}
+
+.content {
+  flex-grow    : 1;
+  height       : 100vh;
+  margin       : 8px 8px 8px 16px;
+  overflow     : scroll;
+  border-radius: 8px;
+}
+
+.content>div {
+  height: calc(100vh - 16px);
+}
